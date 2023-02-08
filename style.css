@@ -3,7 +3,34 @@
    "how to change link color." */
 
 body {
-  background-color: white;
   color: black;
   font-family: Verdana;
+  margin: 0;
+  display: flex;
+}
+
+.maincontainer{
+  background-image: url('BIG-witch-hat-bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: calc(((100vw / 6)*5));
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-mask: linear-gradient(to left, #0000, #000 50px);
+}
+
+.sidebar {
+  background-image: url('Coco.full.2456780-moved-again2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: calc((100vw / 6)*1);
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  
 }
