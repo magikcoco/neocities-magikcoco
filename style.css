@@ -1,0 +1,90 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  color: black;
+  font-family: Verdana;
+  margin: 0;
+  display: flex;
+}
+
+.maincontainer{
+  background-image: url('BIG-witch-hat-bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: calc(((100vw / 6)*5));
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  display: flex;
+  -webkit-mask: linear-gradient(to left, #0000, #000 50px);
+}
+
+.sidebar {
+  background-image: url('Coco.full.2456780-moved-again2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: calc((100vw / 6)*1);
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: calc(100vh/4);
+}
+
+.button {
+  background-image: url(paperpattern.jpg);
+  background-size: cover;
+  border: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+.button:hover {
+  background-image: url(paperpattern-dark.jpg);
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+  padding-top: 5px;
+  width: calc((100vw/6)*3);
+  height: calc((100vh/8)*6);
+  margin: 90px 0px 0px 0px;
+  border: 5px dotted green;
+  background-image: url('paperpattern.jpg');
+  background-size: cover;
+}
+
+.show p{
+  height: auto;
+}
+
+.show h2{
+  height: auto;
+}
